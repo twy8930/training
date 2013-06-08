@@ -82,93 +82,7 @@ public class CommonException {
 	这个异常，因此一旦发现这个异常，我们要做的，就是赶紧去检查一下方法调用中的参数传递是不是出现了错误。
 
 
-	NO.6　java.lang.IllegalAccessException
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Exception
-	java.lang.IllegalAccessException
-
-	　　这个异常的解释是 "没有访问权限 "，当应用程序要调用一个类，但当前的方法即没有对该类的访问权限便会出现这个异常。对程序中
-	用了Package的情况下要注意这个异常。
-	当应用程序试图创建一个实例（而不是数组）、设置或获取一个字段，或者调用一个方法，但当前正在执行的方法无法访问指定类、字段、
-	方法或构造方法的定义时，抛出 IllegalAccessException。
-
-
-	NO.7　java.lang.IncompatibleClassChangeError
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Error
-	java.lang.LinkageError
-	java.lang.IncompatibleClassChangeError
-
-	不兼容的类变化错误。当正在执行的方法所依赖的类定义发生了不兼容的改变时，抛出该异常。一般在修改了应用中的某些类的声明定义而
-	没有对整个应用重新编译而直接运行的情况下，容易引发该错误。
-	在某些类定义中出现不兼容的类更改时抛出该异常。某些目前执行的方法所依赖的类定义已发生了变化。
-
-
-	NO.8　java.lang.InstantiationError
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Error
-	java.lang.LinkageError
-	java.lang.IncompatibleClassChangeError
-	java.lang.InstantiationError
-
-	实例化错误。当一个应用试图通过Java的new操作符构造一个抽象类或者接口时抛出该异常.
-	通常由编译器捕获此错误；如果类定义中存在不兼容的更改，则此错误将只可能在运行时发生。
-
-
-	NO.9　java.lang.LinkageError
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Error
-	java.lang.LinkageError
-
-	链接错误。该错误及其所有子类指示某个类依赖于另外一些类，在该类编译之后，被依赖的类改变了其类定义而没有重新编译所有的类，进
-	而引发错误的情况。
-	LinkageError 的子类指示一个类在一定程度上依赖于另一个类；但是，在编译前一个类之后，后一个类发生了不相容的改变。
-
-
-	NO.10　java.lang.StackOverflowError
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Error
-	java.lang.VirtualMachineError
-	java.lang.StackOverflowError
-
-	堆栈溢出错误。当一个应用递归调用的层次太深而导致堆栈溢出时抛出该错误。
-
-
-	NO.11　java.lang.Exception
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Exception
-
-	Exception 类及其子类是 Throwable 的一种形式，它指出了合理的应用程序想要捕获的条件。 (异常层次结构的根类)
-
-
-	NO.12　java.lang.RuntimeException
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Exception
-	java.lang.RuntimeException
-
-	RuntimeException 是那些可能在 Java 虚拟机正常运行期间抛出的异常的超类。可能在执行方法期间抛出但未被捕获的 RuntimeException
-	的任何子类都无需在 throws 子句中进行声明。 (java.lang中异常的基类)
-
-
-	NO.13　java.util.InputMismatchException
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Exception
-	java.lang.RuntimeException
-	java.util.NoSuchElementException
-	java.util.InputMismatchException
-
-	由 Scanner 抛出，表明用于检索的标记与期望类型的模式不匹配，或者该标记处在期望类型的范围之外。
-
-
-	NO.14　java.io.IOException
+	NO.6　java.io.IOException
 	java.lang.Object
 	java.lang.Throwable
 	java.lang.Exception
@@ -177,7 +91,7 @@ public class CommonException {
 	当发生某种 I/O 异常时，抛出此异常。此类为异常的通用类，它是由失败的或中断的 I/O 操作生成的。
 
 
-	NO.15　java.io.FileNotFoundException
+	NO.7　java.io.FileNotFoundException
 	java.lang.Object
 	java.lang.Throwable
 	java.lang.Exception
@@ -189,7 +103,7 @@ public class CommonException {
 	如果该文件存在，但是由于某些原因不可访问，比如试图打开一个只读文件进行写入，此时这些构造方法仍然会抛出该异常。
 
 
-	NO.16　java.io.EOFException
+	NO.8　java.io.EOFException
 	java.lang.Object
 	java.lang.Throwable
 	java.lang.Exception
@@ -200,22 +114,15 @@ public class CommonException {
 	此异常主要被数据输入流用来表明到达流的末尾。注意，其他许多输入操作返回一个特殊值表示到达流的末尾，而不是抛出异常。
 
 
-	NO.17　java.lang.InterruptedException
-	java.lang.Object
-	java.lang.Throwable
-	java.lang.Exception
-	java.lang.InterruptedException
-
-	当线程在很长一段时间内一直处于正在等待、休眠或暂停状态，而另一个线程用 Thread 类中的 iterrupt 方法中断它时，抛出该异常。
-
-
-	NO.18　java.lang.NumberFormatException
+	NO.9　java.lang.NumberFormatException
 	java.lang.Object
 	java.lang.Throwable
 	java.lang.Exception
 	java.lang.RuntimeException
 	java.lang.IllegalArgumentException
 	java.lang.NumberFormatException
+	
+	数字格式错误
 	
 	**/
 }
