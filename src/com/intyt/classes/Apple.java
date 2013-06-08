@@ -1,6 +1,5 @@
 package com.intyt.classes;
 
-import java.util.List;
 
 /**
  * 抽象类演示
