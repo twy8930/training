@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<util>
+		<path>com.intyt.reflection.FirstStep</path>
+		<init>initCache</init>
+	</util>
+	<!-- 
+	<util>
+		<path></path>
+		<init></init>
+	</util>
+	-->
+</config>
